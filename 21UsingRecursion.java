@@ -26,7 +26,7 @@ public class TwentyOne {
          System.out.print("No possible number combinations equal 21");
          return;
       }
-
+      //Iterating over each arrayList in the hashtable to print to console
       for (ArrayList<Integer> solution : answer){
          System.out.print("The values ");
          for (Integer num : solution){
@@ -36,7 +36,7 @@ public class TwentyOne {
       }
    }
 
-   //
+   //Need to create this method because parameters cannot be initialized, then call recursion on other method.
    private static HashSet twentyOne(ArrayList<Integer> userInput){
       ArrayList<Integer> stack = new ArrayList<>();
       HashSet<ArrayList<Integer>> answer = new HashSet<>();
@@ -47,12 +47,11 @@ public class TwentyOne {
       //Equivilent to enumerate in python (To know index of which position of a character from the list im iterating over)
       ListIterator<Integer> userInputIterator = userInput.listIterator();
       while (userInputIterator.hasNext()){
-         //Creating a new_stack object because you cannot append
+         //Creating a new_stack object, since appending to the object updates in all recursive instances
          ArrayList<Integer> new_stack = new ArrayList<>(stack);
          new_stack.add(userInputIterator.next());
 
          int sum = sum(new_stack);
-
          if (sum == 21){
             answer.add(new_stack);
          } else if (sum < 21){
