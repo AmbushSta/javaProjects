@@ -26,7 +26,7 @@ public class TwentyOne {
          System.out.print("No possible number combinations equal 21");
          return;
       }
-      //Iterating over each arrayList in the hashtable to print to console
+      //Iterating over each arrayList in the set to print to console
       for (ArrayList<Integer> solution : answer){
          System.out.print("The values ");
          for (Integer num : solution){
