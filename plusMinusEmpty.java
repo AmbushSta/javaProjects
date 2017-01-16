@@ -4,7 +4,8 @@ import java.util.Scanner;
  * Author: Michael Cowie
  * Takes a string input from the user and prints all combinations of either a "+", "-" or empty
  * position in the place.
- * Originally done to complete the first half of a hackerrank question
+ * Originally done to complete the first half of a hackerrank question and practice recursion in java
+ * and being unable to use uninitialized variables in parameters like python
  *
  Example input: "123"
  1+2+3
