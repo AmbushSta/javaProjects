@@ -28,7 +28,6 @@ public class plusMinusEmpty {
    }
 
    private static void plusMinusEmpty(char[] userInput){
-      //ArrayList<String> stack = new ArrayList();
       int index = 0;
       String currentString = "";
       plusMinusEmptyRecursive(userInput, currentString, index);
