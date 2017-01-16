@@ -58,9 +58,11 @@ public class TwentyOne {
             twentyOneRecursive(new ArrayList<>(userInput.subList(userInputIterator.nextIndex(), userInput.size())), new_stack, answer);
          }
       }
+      //Same HashSet in each recursive instance
       return answer;
    }
 
+   //Method to calculate sum integers given an ArrayList of integers
    private static int sum(ArrayList<Integer> nums){
       int sum = 0;
       for (int num : nums){
