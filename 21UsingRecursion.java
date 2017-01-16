@@ -14,6 +14,7 @@ public class TwentyOne {
       Scanner userInput = new Scanner(System.in);
       String stringInput = userInput.nextLine();
 
+      //Takes string input to arrayList of integers to make it iterable, arrayList because unknown length
       ArrayList<Integer> allNum = new ArrayList<>();
       for (String num : stringInput.split(" ")){
          allNum.add(Integer.parseInt(num));
@@ -35,8 +36,7 @@ public class TwentyOne {
       }
    }
 
-
-
+   //
    private static HashSet twentyOne(ArrayList<Integer> userInput){
       ArrayList<Integer> stack = new ArrayList<>();
       HashSet<ArrayList<Integer>> answer = new HashSet<>();
