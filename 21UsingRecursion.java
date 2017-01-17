@@ -43,7 +43,7 @@ public class TwentyOne {
       return twentyOneRecursive(userInput, stack, answer);
    }
 
-   private static HashSet<ArrayList<Integer>> twentyOneRecursive(ArrayList<Integer> userInput,ArrayList<Integer> stack, HashSet<ArrayList<Integer>> answer){
+   private static HashSet<ArrayList<Integer>> twentyOneRecursive(ArrayList<Integer> userInput, ArrayList<Integer> stack, HashSet<ArrayList<Integer>> answer){
       //Equivilent to enumerate in python (To know index of which position of a character from the list im iterating over)
       ListIterator<Integer> userInputIterator = userInput.listIterator();
       while (userInputIterator.hasNext()){
