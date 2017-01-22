@@ -44,7 +44,7 @@ public class TwentyOne {
    }
 
    private static HashSet<ArrayList<Integer>> twentyOneRecursive(ArrayList<Integer> userInput, ArrayList<Integer> stack, HashSet<ArrayList<Integer>> answer){
-      //Equivilent to enumerate in python (To know index of which position of a character from the list im iterating over)
+      //ListIterator is equivilent to enumerate in python
       ListIterator<Integer> userInputIterator = userInput.listIterator();
       while (userInputIterator.hasNext()){
          //Creating a new_stack object, since appending to the object updates in all recursive instances
