@@ -4,8 +4,7 @@
 public class StringReversalRecursion {
 
    public static void main(String[] args){
-      StringReversalRecursion answer = new StringReversalRecursion();
-      System.out.println("Result: " + answer.stringRecursion("test123"));
+      System.out.println("Result: " + new StringReversalRecursion().stringRecursion("test123"));
    }
 
    String reversedStr = "";
