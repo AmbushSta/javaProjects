@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 /**
- * Given two sequence of numbers, prints all numbers that are in the first
+ * Given two sequence of numbers from standard input, prints all numbers that are in the first
  * sequence but in the second
  */
 public class TwoArrayXnotinY {
