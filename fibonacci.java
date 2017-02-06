@@ -4,6 +4,7 @@
 public class fib {
 
    public static void main(String[] args){
+      //Example
       System.out.println(fibonacci(12));
    }
 
