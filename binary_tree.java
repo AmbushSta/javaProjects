@@ -18,6 +18,7 @@ public class Main {
          System.out.print(nodeVal + " "); //5 3 10 2
       }
    }
+
 }
 
 class Node {
