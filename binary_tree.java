@@ -9,7 +9,7 @@ import java.util.List;
 public class Main {
 
    public static void main(String[] args){
-      Tree binaryTree = new Tree();
+      BinaryTree binaryTree = new BinaryTree();
       binaryTree.add(5);
       binaryTree.add(3);
       binaryTree.add(2);
@@ -29,10 +29,10 @@ class Node {
    }
 }
 
-class Tree{
+class BinaryTree {
    Node root;
 
-   public Tree(){
+   public BinaryTree(){
       this.root = null;
    }
 
