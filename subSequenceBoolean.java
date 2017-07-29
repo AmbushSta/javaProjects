@@ -28,9 +28,6 @@ public class groupSum {
       if (index >= nums.length){
          return (target == 0)
       }
-      /*The two following boolean statements return true
-      * if the base case is met during the recursive calls
-      */
 
       //Current index being treated as a 1 and being removed
       if (groupSum(index + 1, nums, target - nums[index])){
