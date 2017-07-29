@@ -26,11 +26,7 @@ public class groupSum {
    public static boolean groupSum(int index, int[] nums, int target) {
       //Base case
       if (index >= nums.length){
-         if (target == 0){
-            return true;
-         } else{
-            return false;
-         }
+         return (target == 0)
       }
       /*The two following boolean statements return true
       * if the base case is met during the recursive calls
