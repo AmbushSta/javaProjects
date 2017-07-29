@@ -1,45 +1,17 @@
 /**
  * Reverses a string using recursion
  */
-public class StringReversalRecursion {
+public class ReverseString {
 
    public static void main(String[] args){
-      System.out.println("Result: " + new StringReversalRecursion().stringRecursion("test123"));
+      System.out.println(reverseString("123"));
    }
 
-   String reversedStr = "";
-
-   private String stringRecursion(String str){
-      if(str.length() == 1){
-         return str;
-      }else{
-         reversedStr += str.charAt(str.length() -1) + stringRecursion(str.substring(0, str.length() - 1));
-         return reversedStr;
+   public static String reverseString(String input){
+      if (input.length() == 1) {
+         return input;
+      } else{
+         return input.charAt(input.length() - 1) + reverseString(input.substring(0, input.length() - 1));
       }
-   }
-}
-
-/**
- * Another implementation
-*/
-
-public class StringReversalRecursion {
-
-
-   public static void main(String[] args){
-      StringReversalRecursion answer = new StringReversalRecursion();
-      System.out.println("Result: " + answer.stringRecursion("test"));
-   }
-
-   String reversedStr = "";
-
-   private String stringRecursion(String str){
-      if(str.length() == 0){
-
-      }else{
-         reversedStr += str.charAt(str.length() - 1);
-         stringRecursion(str.substring(0, str.length() -1));
-      }
-      return reversedStr;
    }
 }
