@@ -6,13 +6,6 @@ import java.util.Scanner;
  * Question: Given an array of ints, is it possible to choose a
  * group of some of the ints, such that the group sums to the given target?
  *
- *
- * My idea: Treat each number as a 1 or 0. Obtain all combination
- * of 1 and 0s for the list of nums, if 1 remove from the target if 0
- * leave the number. The means there will be 2^n combinations to obtain the answer
- * If the target is 0 when we are at the remaining index, it means that
- * that combination of numbers equals the target goal.
- *
  * Note: Modified to take sequence and target from standard input
  */
 public class groupSum {
