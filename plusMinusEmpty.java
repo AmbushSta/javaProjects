@@ -35,7 +35,7 @@ public class plusMinusEmpty {
    }
 
 
-   private static void plusMinusEmptyRecursive(char[] userInput, String currentString,int index) {
+   private static void plusMinusEmptyRecursive(char[] userInput, String currentString, int index) {
       currentString += userInput[index];
       if (index == userInput.length - 1) {
          System.out.println(currentString);
